@@ -4,9 +4,13 @@
 }
 
 #log{
-    max-height: 50vh;
+    background-color: lightgray;
+
+    /* Fixed Height */
+    height: 50vh;
     overflow-y: auto;
 
+    /* Inverted Scroll */
     display: flex;
     flex-direction: column-reverse;
 }

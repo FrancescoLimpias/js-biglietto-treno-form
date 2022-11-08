@@ -106,12 +106,15 @@ class RailwayMan {
     }
 
     compliment() {
+        sendLog("Nice to meet you!", "You")
         this.#say("Oh thanks! I really needed that today!");
         this.#mood = "GOOD";
     }
 
     askForTicket(form) {
-        // Greets player
+        // You ask for ticket
+        sendLog("I need a ticket", "You");
+        // RailMan greets player
         this.#say("Ohh I see, so you need a ticket...");
 
         if (form) {
