@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,55 @@
     <title>Documento</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <input type="number" name="" id="input-age" placeholder="Età">
-    <input type="number" name="" id="input-km" placeholder="KM">
-    <input type="submit" id="input-submit" value="Richiedi biglietto">
-    <span id="output-ticket"></span>
+
+    <div>
+
+        <!-- TICKET -->
+        <div id="ticket">
+            <h3>TICKET</h3>
+            <div class="fields">
+                <div>
+                    <span>Nome</span>
+                    <span>Cognome</span>
+                    <span>Età</span>
+                    <span>KM</span>
+                    <span>Prezzo</span>
+                </div>
+                <div>
+                    <span>Jon</span>
+                    <span>Snow</span>
+                    <span id="output-age"></span>
+                    <span id="output-km"></span>
+                    <span id="output-price"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- FORM -->
+        <div id="form">
+            <h3>FORM</h3>
+            <div id="inputs" class="fields">
+                <div>
+                    <label for="input-age">
+                        Età
+                    </label>
+                    <label for="input-km">
+                        Kilometri
+                    </label>
+                </div>
+                <div>
+                    <input type="number" name="" id="input-age" placeholder="la tua età">
+                    <input type="number" name="" id="input-km" placeholder="km da percorrere">
+                </div>
+            </div>
+
+            <input type="submit" id="input-submit" value="Richiedi biglietto">
+        </div>
+    </div>
+
     <script src="main.js"></script>
 </body>
+
 </html>

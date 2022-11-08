@@ -1,1 +1,54 @@
+:root{
+    --accent: rgb(65, 92, 225);
+    --primary: rgb(65, 92, 225, .6);
+}
 
+body{
+    height: 100vh;
+
+    background-color: #111;
+    color: white;
+    font-family: 'Lucida Sans', sans-serif;
+
+    display: flex;
+    align-items: center;
+}
+body > div{
+    margin: 0 auto;
+    max-width: 500px;
+}
+body > div > div{
+    border: 3px solid var(--accent);
+    background-color: var(--primary);
+    border-radius: 10px;
+
+    padding: 0 20px 10px;
+
+    margin-bottom: .5rem;
+}
+#ticket{
+    display: none;
+}
+.fields{
+    display: flex;
+    gap: 1rem;
+
+    margin-bottom: .5rem;
+}
+.fields > *{
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+.fields > div:first-child{
+    font-weight:600;
+}
+.fields > div:first-child > *{
+    padding: 3px;
+}
+.fields > div:last-child > *{
+    width: 150px;
+    background-color: aliceblue;
+    color: black;
+    padding: 3px;
+}

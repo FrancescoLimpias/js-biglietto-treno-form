@@ -1,8 +1,13 @@
 // Document references
+const form = document.getElementById("form");
 const inputAge = document.getElementById("input-age");
 const inputKM = document.getElementById("input-km");
 const inputSubmit = document.getElementById("input-submit");
-const outputTicket = document.getElementById("output-ticket");
+
+const ticket = document.getElementById("ticket");
+const outputAge = document.getElementById("output-age");
+const outputKM = document.getElementById("output-km");
+const outputPrice = document.getElementById("output-price");
 
 // Listeners
 inputSubmit.addEventListener("click", function(){
@@ -30,6 +35,14 @@ inputSubmit.addEventListener("click", function(){
         
         // Calc price
         let price = (km * eurosPerKM).toFixed(2);
-        outputTicket.innerHTML = `Il prezzo del biglietto è di ${price}€`;
+
+        // Print
+        outputAge.innerHTML = age;
+        outputKM.innerHTML = km;
+        outputPrice.innerHTML = `${price}€`;
+
+        // Switch view
+        form.style.display = "none";
+        ticket.style.display = "block";
     }
 })
