@@ -2,3 +2,11 @@
     font-size: large;
     font-weight: 800;
 }
+
+#log{
+    max-height: 50vh;
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: column-reverse;
+}

@@ -38,7 +38,7 @@ addEventListener("LOG", (messageEvent) => {
         + " "
         + message
     );
-    LOG_VIEW.append(
+    LOG_VIEW.prepend(
         line_view
     );
 
